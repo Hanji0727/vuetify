@@ -1,28 +1,27 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+    <v-app>
+        <Hambargermenu1></Hambargermenu1>
+				
+    </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Hambargermenu from './components/menu/Hambargermenu.vue'
+import Hambargermenu1 from './components/menu/Hambargermenu1.vue'
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  components: { 
+    Hambargermenu,
+    Hambargermenu1
+  },
+  data() {
+    return{
+			
+    }
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
